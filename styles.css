@@ -1,0 +1,46 @@
+ *{
+	 margin: 0;
+	 padding: 0;
+ }
+ .gameBody {
+    display: grid;
+    text-align: center;
+}
+ .row {
+	 font-size: 0px;
+
+ }
+ .title {
+    display: flex;
+    padding: 2%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+ .column {
+	 width: 40px;
+	 height: 40px;
+	 background-color: darkgrey;
+	 display: inline-block;
+	 border-right: 1px solid oldlace ;
+	 border-bottom: 1px solid oldlace;
+	 vertical-align: top;
+	 color: green;
+	 font-size: 16px;
+	 line-height: 40px;
+ }
+ .hidden {
+	 background-color: peru;
+	 cursor: pointer;
+ }
+ .hidden:hover {
+	 background-color: darkgrey;
+ }
+ .row:last-child .column {
+	 border-bottom: none;
+ }
+ .row .column:last-child {
+	 border-right: none;
+ }
